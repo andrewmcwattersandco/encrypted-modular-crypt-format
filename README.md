@@ -17,11 +17,15 @@ A compliant EMCF string will be formatted to output:
 $aes-256-gcm$7$S$IV||C||T
 ```
 
-## Prior Art
+## Prior art
 * Modular Crypt Format  
   https://passlib.readthedocs.io/en/stable/modular_crypt_format.html
 * PHC String Format  
   https://github.com/P-H-C/phc-string-format/blob/master/phc-sf-spec.md
+
+## See also
+* Binary Modular Crypt Format (BMCF)  
+  https://github.com/ademarre/binary-mcf
 
 ## License
 Creative Commons Zero v1.0 Universal
