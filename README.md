@@ -17,6 +17,15 @@ A compliant EMCF string will be formatted to output:
 $aes-256-gcm$7$S$IV||C||T
 ```
 
+### Envelope encryption
+Given the following inputs:
+
+* Wrapped DEK: D
+
+```emcf
+$aes-256-gcm$D$IV||C||T
+```
+
 ## Prior art
 * Modular Crypt Format  
   https://passlib.readthedocs.io/en/stable/modular_crypt_format.html
