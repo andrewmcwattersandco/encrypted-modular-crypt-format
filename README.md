@@ -1,17 +1,26 @@
 # encrypted-modular-crypt-format
 Encrypted Modular Crypt Format (EMCF)
 
-## Example
+## Examples
 Given the following inputs:
 
 * Algorithm: `aes-256-gcm`
-* KDF: `7` [scrypt][1][^1]
-* Salt: _S_
+* Key Identifier: K
 * IV: _IV_
 * Ciphertext: _C_
 * Authentication Tag: _T_
 
 A compliant EMCF string will be formatted to output:
+
+```emcf
+$aes-256-gcm$K$IV||C||T
+```
+
+### Password-based symmetric encryption
+Given the following inputs:
+
+* KDF: `7` [scrypt][1][^1]
+* Salt: _S_
 
 ```emcf
 $aes-256-gcm$7$S$IV||C||T
@@ -35,6 +44,8 @@ $aes-256-gcm$D$IV||C||T
 ## See also
 * Binary Modular Crypt Format (BMCF)  
   https://github.com/ademarre/binary-mcf
+* SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC | CSRC
+  https://csrc.nist.gov/pubs/sp/800/38/d/final
 
 ## License
 Creative Commons Zero v1.0 Universal
