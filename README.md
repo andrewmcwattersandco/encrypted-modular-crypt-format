@@ -44,7 +44,7 @@ $aes-256-gcm$D$IV||C||T
 ## See also
 * Binary Modular Crypt Format (BMCF)  
   https://github.com/ademarre/binary-mcf
-* SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC | CSRC
+* SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC | CSRC  
   https://csrc.nist.gov/pubs/sp/800/38/d/final
 
 ## License
